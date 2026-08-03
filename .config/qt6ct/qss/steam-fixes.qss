@@ -1,0 +1,66 @@
+/* 1. SUNKEN INPUTS & PANELS (ACTIVE)
+   Applies a 9x-style "inset/sunken" border using dual-color gradients.
+   Targets: QComboBoxes, menu checkbox boxes, and QLabels explicitly set to "Sunken" frames. */
+
+QComboBox,
+QMenu::indicator,
+QLabel[frameShape="StyledPanel"][frameShadow="Sunken"],
+QLabel[frameShape="Panel"][frameShadow="Sunken"],
+QLabel[frameShape="6"][frameShadow="48"],
+QLabel[frameShape="2"][frameShadow="48"] {
+    background-color: palette(base);
+    border-width: 2px;
+    padding: 2px;
+    border-style: solid;
+    border-radius: 0px;
+
+    /* Top & Left: Outer = Button color, Inner = Light shadow (wtf was this supposed to mean lulz) */
+    border-top-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.49 palette(midlight), stop:0.5 palette(shadow));
+    border-left-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0.49 palette(midlight), stop:0.5 palette(shadow));
+
+    /* Bottom & Right: Inner = Dark shadow, Outer = Border color */
+    border-bottom-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.49 palette(mid), stop:0.5 palette(light));
+    border-right-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0.49 palette(mid), stop:0.5 palette(light));
+}
+
+/* 2. SUNKEN INPUTS & PANELS (DISABLED)
+   Flattens the background color to indicate the field cannot be interacted with.
+   Targets: The exact same list of sunken elements as above, but only when disabled. */
+
+QComboBox:disabled,
+QMenu::indicator:disabled,
+QLabel[frameShape="StyledPanel"][frameShadow="Sunken"]:disabled,
+QLabel[frameShape="Panel"][frameShadow="Sunken"]:disabled,
+QLabel[frameShape="6"][frameShadow="48"]:disabled,
+QLabel[frameShape="2"][frameShadow="48"]:disabled {
+    background-color: palette(alternate-base);
+}
+
+/* 3. COMBOBOX DROP-DOWN LIST
+   Styles the popup container and item highlighting when a dropdown opens.
+   Targets: The list view element inside a QComboBox. */
+
+QComboBox QAbstractItemView {
+    background-color: palette(base);
+    border: 1px solid palette(shadow);
+    selection-background-color: palette(highlight);
+    selection-color: palette(highlighted-text);
+}
+
+/* 4. TOOLTIPS
+   Applies a simple, flat border and background to hover-popups.
+   Targets: All application tooltips. */
+
+QToolTip {
+    background-color: palette(base);
+    border: 1px solid palette(shadow);
+    color: palette(text);
+}
+
+/* 5. CHECKED MENU INDICATORS
+   Fills the center of the sunken box with the active selection color.
+   Targets: Checkboxes inside menus when they are actively turned on/checked. */
+
+QMenu::indicator:checked {
+    background-color: palette(highlight);
+}

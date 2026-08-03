@@ -1,0 +1,4 @@
+export XDG_SESSION_TYPE=x11
+# xarndr command goes in here
+xrdb $XDG_CONFIG_HOME/x11/xresources
+exec dbus-run-session dwm
