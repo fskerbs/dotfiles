@@ -3,7 +3,7 @@
 
 arrow {
    color: alpha(currentColor, 0.75);
-   -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+   -gtk-icon-source: none;
    min-height: 17px;
    min-width: 17px; }
 
@@ -51,16 +51,16 @@ combobox arrow:disabled {
 
 
 spinbutton.horizontal > button.down {
-   color: transparent;
-   background-image: url("assets/arrow_down.png");
+   color: @theme_fg_color;
+   background-image: none;
    background-position: center;
    min-height: 14px;
    min-width: 14px;
 }
 
 spinbutton.horizontal > button.up {
-   color: transparent;
-   background-image: url("assets/arrow_up.png");
+   color: @theme_fg_color;
+   background-image: none;
    background-position: center;
    min-height: 14px;
    min-width: 14px;
