@@ -145,7 +145,7 @@
   padding: 2px;
   margin: 0;
   color: @active_title_text;
-  background-image: linear-gradient(to right, @active_title_color1, @active_title_color); }
+  background-color: @active_title_color; }
 
 #whiskermenu-window entry {
   margin: 0; }

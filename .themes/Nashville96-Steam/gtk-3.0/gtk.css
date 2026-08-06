@@ -16,8 +16,7 @@
 @define-color menubar_fg_color @fg_color;
 @define-color notebook_bg_color @bg_color;
 @define-color disabled_fg_color #3C4636;
-@define-color active_title_color #978730;
-@define-color active_title_color1 #000000;
+@define-color active_title_color #4B5844;
 @define-color active_title_text #FFFFFF;
 /* begin */
 
