@@ -33,6 +33,7 @@ expander arrow:checked {
 
 
 combobox arrow, combobox arrow:disabled {
+   -gtk-icon-source: none;
    color: transparent;
    margin-right: -4px;
 /*   background-image: url("assets/arrow_down.png");*/
@@ -41,6 +42,7 @@ combobox arrow, combobox arrow:disabled {
    min-width: 10px; }
 
 combobox arrow:disabled {
+   -gtk-icon-source: none;
    color: transparent;
    background-position: center;
    min-height: 10px;
