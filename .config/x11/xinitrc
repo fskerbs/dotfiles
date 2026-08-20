@@ -1,4 +1,8 @@
 export XDG_SESSION_TYPE=x11
-# xarndr command goes in here
+# xrandr command goes in here
 xrdb $XDG_CONFIG_HOME/x11/xresources
-exec dbus-run-session dwm
+exec dbus-run-session sh -c '
+    eval "$(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)"
+    export SSH_AUTH_SOCK
+    exec dwm
+'
