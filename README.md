@@ -12,13 +12,13 @@ The installation instructions are meant for Void Linux, but you can just do the 
 ## Install required packages
 
 ```bash
-sudo xbps-install NetworkManager network-manager-applet Thunar thunar-archive-plugin thunar-volman file-roller gvfs gtk+3 alacritty vim-x11 brightnessctl dunst elogind dbus feh pipewire gnome-keyring xdg-utils xfce-polkit xfce4-clipman-plugin xfce4-screenshooter xorg-minimal xrandr xrdb setxkbmap xss-lock pulsemixer redshift qt5ct qt6ct xdg-user-dirs
+sudo xbps-install NetworkManager network-manager-applet Thunar thunar-archive-plugin thunar-volman file-roller gvfs gtk+3 alacritty dunst elogind dbus feh pipewire gnome-keyring xdg-utils xfce-polkit xfce4-clipman-plugin xfce4-screenshooter xorg-minimal xrandr xrdb setxkbmap xss-lock qt5ct qt6ct xdg-user-dirs
 ```
 
 In addition to that here are some packages for other software I use as well but aren't strictly necessary:
 
 ```bash
-sudo xbps-install bluez keepassxc seahorse gvfs-gphoto2 gvfs-mtp mpv okular libreoffice qbittorrent strawberry
+sudo xbps-install arandr pulsemixer brightnessctl redshift caffeine vim-x11 gvfs-gphoto2 gvfs-mtp bluez libspa-bluetooth keepassxc seahorse mpv okular libreoffice qbittorrent strawberry
 ```
 
 ### Other software
@@ -49,7 +49,7 @@ cd .dotfiles && stow --no-folding .
 
 - You must manually enable steam-fixes.qss in the `Style Sheets` tab in qt5ct and qt6ct.
 
-- Follow the instructions on [here](https://docs.voidlinux.org/config/media/pipewire.html) to get ALSA integration working on pipewire, as well as bluetooth.
+- Follow the instructions on [here](https://docs.voidlinux.org/config/media/pipewire.html) to get ALSA integration working on pipewire.
 
 - Edit `~/.config/x11/xinitrc` to add stuff like xrandr commands or your window manager of choice. Also symlink files in `~/.config/x11/xorg.conf.d` to `/etc/X11/xorg.conf.d` as needed.
 
