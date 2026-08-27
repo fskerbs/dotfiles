@@ -1,0 +1,34 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "display": {
+    "color": {
+        "keys": "green"
+    }
+  },
+  "logo": {
+    "type": "file",
+    "source": "~/.config/fastfetch/void-logo.txt",
+    "color": {
+      "1": "light_green",
+      "2": "green"
+    }
+  },
+  "modules": [
+    "os",
+    "kernel",
+    "packages",
+    "separator",
+    "wm",
+    "display",
+    "separator",
+    "theme",
+    "icons",
+    "terminal",
+    "terminalfont",
+    "shell",
+    "separator",
+    "cpu",
+    "gpu",
+    "memory"
+  ]
+}
