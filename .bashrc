@@ -6,6 +6,9 @@
 alias ls='ls --color=auto'
 alias diff='diff --color=auto'
 
+bind '"\e[1;5C": forward-word'
+bind '"\e[1;5D": backward-word'
+
 # PS1_COLOR1='\[\e[32m\]'
 # PS1_COLOR2='\[\e[92m\]'
 # PS1_STOP='\[\e[0m\]'
