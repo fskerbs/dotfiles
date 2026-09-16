@@ -8,6 +8,9 @@ alias diff='diff --color=auto'
 
 bind '"\e[1;5C": forward-word'
 bind '"\e[1;5D": backward-word'
+bind '"\C-h": backward-kill-word'
+
+export LS_COLORS="di=01;94"
 
 # PS1_COLOR1='\[\e[32m\]'
 # PS1_COLOR2='\[\e[92m\]'
