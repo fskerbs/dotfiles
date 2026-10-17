@@ -31,7 +31,7 @@ sudo xbps-install arandr pulsemixer brightnessctl redshift caffeine vim-x11 gvfs
 
 ## Set up dotfiles
 
-I personally use GNU stow:
+Using GNU stow:
 
 ```bash
 cd ~
@@ -54,6 +54,8 @@ cd .dotfiles && stow --no-folding .
 - Edit `~/.config/x11/xinitrc` to add stuff like xrandr commands or your window manager of choice. Also symlink files in `~/.config/x11/xorg.conf.d` to `/etc/X11/xorg.conf.d` as needed.
 
 - Run `xdg-user-dirs-update` to generate XDG directories (i.e., Downloads, Documents, etc.).
+
+- Run `fc-cache -fv` to cache the included fonts.
 
 - It wouldn't be a bad idea to install the `ufw` package and set it up.
 
