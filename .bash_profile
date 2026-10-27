@@ -20,7 +20,6 @@ export XINITRC="$XDG_CONFIG_HOME/x11/xinitrc"
 # Additional configuration
 export GTK_THEME=Nashville96-Steam
 export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
-export XCURSOR_PATH="$HOME/.local/share/icons"
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 # Hardware acceleration (Uncomment if on Intel HD Graphics)
