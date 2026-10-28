@@ -15,12 +15,13 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 
 # X11 configuration
-export XINITRC="$XDG_CONFIG_HOME/x11/xinitrc"
+export XINITRC="$HOME/.config/x11/xinitrc"
 
 # Additional configuration
-export GTK_THEME=Nashville96-Steam
+export GTK_THEME="Nashville96-Steam"
 export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
-export QT_QPA_PLATFORMTHEME=qt5ct
+export XCURSOR_PATH="$HOME/.icons"
+export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # Hardware acceleration (Uncomment if on Intel HD Graphics)
 # export LIBVA_DRIVER_NAME=iHD
